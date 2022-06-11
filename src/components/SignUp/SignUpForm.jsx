@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import FormInput from "../FormInput/FormInput";
+import Button from "../Button/Button";
 
 import { 
     createAuthUserWithEmailAndPassword,
@@ -104,7 +105,7 @@ const SignUpForm = () => {
                 }}
             />
 
-            <button type="submit">Sign Up</button>
+            <Button type="submit">Sign Up</Button>
         </form>
         </div>
     );
