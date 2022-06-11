@@ -1,4 +1,3 @@
-import { async } from '@firebase/util';
 import { initializeApp } from 'firebase/app';
 import { 
     getAuth, 
@@ -13,7 +12,7 @@ import {
     doc, // allows the ability to retrieve documents from the database
     getDoc, //gets the data on the document
     setDoc // sets the data on the document
-} from 'firebase/firestore'
+} from 'firebase/firestore';
 
 const firebaseConfig = {
     apiKey: "AIzaSyAVdVlwNZn8YJjNVq2dE4eYvp96SKNFE9g",
@@ -27,13 +26,15 @@ const firebaseConfig = {
 // Initialize Firebase
 const firebaseApp = initializeApp(firebaseConfig);
 
-const provider = new GoogleAuthProvider();
-provider.setCustomParameters({
+const googleProvider = new GoogleAuthProvider();
+
+googleProvider.setCustomParameters({
     prompt: "select_account"
 });
 
 export const auth = getAuth();
-export const signInWithGooglePopup = () => signInWithPopup(auth, provider);
+export const signInWithGooglePopup = () => signInWithPopup(auth, googleProvider);
+export const signInWithGoogleRedirect = () => signInWithRedirect(auth, googleProvider);
 
 export const db = getFirestore();
 
