@@ -1,3 +1,4 @@
+import { async } from '@firebase/util';
 import { initializeApp } from 'firebase/app';
 import { 
     getAuth, 
@@ -15,7 +16,9 @@ import {
     getFirestore,
     doc, // allows the ability to retrieve documents from the database
     getDoc, //gets the data on the document
-    setDoc // sets the data on the document
+    setDoc,
+    collection,
+    writeBatch // sets the data on the document
 } from 'firebase/firestore';
 
 const firebaseConfig = {
@@ -43,6 +46,11 @@ export const signInWithGoogleRedirect = () =>
     signInWithRedirect(auth, googleProvider);
 
 export const db = getFirestore();
+
+export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => {
+    const collectionRef = collection(db, collectionKey);
+    
+}
 
 export const createUserDocumentFromAuth = async (
     userAuth,
