@@ -19,6 +19,7 @@
       position: absolute;
       top: 255px;
       display: none;
+      letter-spacing: 0.1px;
     }
   
     &:hover {
@@ -29,6 +30,7 @@
       button {
         opacity: 0.85;
         display: flex;
+        letter-spacing: 0.1px;
       }
     }
   

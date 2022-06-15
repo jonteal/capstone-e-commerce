@@ -1,5 +1,7 @@
-.category-preview-container {
-    display: flex;
+import styled from 'styled-components';
+
+export const CategoryContainer = styled.div`
+  display: flex;
     flex-direction: column;
     margin-bottom: 30px;
   
@@ -14,4 +16,4 @@
       grid-template-columns: repeat(4, 1fr);
       column-gap: 20px;
     }
-  }
+`;
