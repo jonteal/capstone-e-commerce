@@ -31,7 +31,7 @@ const SignInForm = () => {
         event.preventDefault();
 
         try {
-            const {user} = await signInAuthUserWithEmailAndPassword(
+            await signInAuthUserWithEmailAndPassword(
                 email, 
                 password
             );
@@ -65,33 +65,32 @@ const SignInForm = () => {
 
             <FormInput
                 label='Email'
-                inputOptions={{
-                    type: 'email',
-                    required: true,
-                    onChange: handleChange,
-                    name: 'email',
-                    value: email,
-                }}
+                type='email'
+                required
+                onChange={handleChange}
+                name='email'
+                value={email}
             />
 
             <FormInput
                 label='Password'
-                inputOptions={{
-                    type: 'password',
-                    required: true,
-                    onChange: handleChange,
-                    name: 'password',
-                    value: password,
-                }}
+                type='password'
+                required
+                onChange={handleChange}
+                name='password'
+                value={password}
             />
 
             <ButtonsContainer>
                 <Button type='submit'>Sign In</Button>
-                <Button type='button' buttonType={BUTTON_TYPE_CLASSES.google} onClick={signInWithGoogle}>
-                    Google Sign In
+                <Button 
+                    type='button' 
+                    buttonType={BUTTON_TYPE_CLASSES.google} 
+                    onClick={signInWithGoogle}
+                >
+                    Sign in With Google
                 </Button>
             </ButtonsContainer>
-            
         </form>
         </SignInContainer>
     );
