@@ -4,7 +4,7 @@ import Authentication from './routes/authentication/Authentication';
 import Shop from './routes/shop/Shop';
 import Checkout from './routes/checkout/Checkout';
 
-import Home from "./routes/home/Home";
+import Home from './routes/home/Home';
 
 const App = () => {
   return (

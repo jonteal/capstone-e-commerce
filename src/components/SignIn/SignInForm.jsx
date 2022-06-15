@@ -1,19 +1,19 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import FormInput from "../FormInput/FormInput";
-import Button from "../Button/Button";
+import FormInput from '../FormInput/FormInput';
+import Button from '../Button/Button';
 
 import { 
     signInWithGooglePopup,
     createUserDocumentFromAuth,
     signInAuthUserWithEmailAndPassword 
-} from "../../utils/firebase/firebase.utils";
+} from '../../utils/firebase/firebase.utils';
 
 import './signInForm.scss';
 
 const defaultFormFields = {
-    email: "",
-    password: "",
+    email: '',
+    password: '',
 };
 
 const SignInForm = () => {
@@ -59,7 +59,7 @@ const SignInForm = () => {
     };
 
     return (
-        <div className="sign-up-container">
+        <div className='sign-up-container'>
         <h2>Already have an account?</h2>
         <span>Sign in with your email and password</span>
         <form onSubmit={handleSubmit}>
@@ -67,10 +67,10 @@ const SignInForm = () => {
             <FormInput
                 label='Email'
                 inputOptions={{
-                    type: "email",
+                    type: 'email',
                     required: true,
                     onChange: handleChange,
-                    name: "email",
+                    name: 'email',
                     value: email,
                 }}
             />
@@ -78,15 +78,15 @@ const SignInForm = () => {
             <FormInput
                 label='Password'
                 inputOptions={{
-                    type: "password",
+                    type: 'password',
                     required: true,
                     onChange: handleChange,
-                    name: "password",
+                    name: 'password',
                     value: password,
                 }}
             />
 
-            <div className="buttons-container">
+            <div className='buttons-container'>
                 <Button type='submit'>Sign In</Button>
                 <Button type='button' buttonType={'google'} onClick={signInWithGoogle}>
                     Google Sign In
