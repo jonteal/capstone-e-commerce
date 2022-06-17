@@ -6,7 +6,11 @@ import { CartContext } from '../../contexts/cart.context';
 import Button from '../Button/Button';
 import CartItem from '../CartItem/CartItem';
 
-import { CartDropdownContainer, EmptyMessage, CartItems } from './cartDropdown.styles';
+import { 
+    CartDropdownContainer, 
+    EmptyMessage, 
+    CartItems 
+} from './cartDropdown.styles';
 
 const CartDropdown = () => {
     const { cartItems } = useContext(CartContext);
