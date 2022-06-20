@@ -1,39 +1,48 @@
-import { useContext } from 'react';
+import { useSelector } from "react-redux";
 
-import { CartContext } from '../../contexts/cart.context';
+import {
+    selectCartItems,
+    selectCartTotal,
+} from "../../store/cart/cart.selector";
 
-import CheckoutItem from '../../components/CheckoutItem/CheckoutItem';
+import CheckoutItem from "../../components/CheckoutItem/CheckoutItem";
 
-import { CheckoutContainer } from './checkout.styles';
+import {
+    CheckoutContainer,
+    CheckoutHeader,
+    HeaderBlock,
+    Total,
+} from "./checkout.styles";
 
 const Checkout = () => {
-    const { cartItems, cartTotal } = useContext(CartContext);
+    const cartItems = useSelector(selectCartItems);
+    const cartTotal = useSelector(selectCartTotal);
+
     return (
         <CheckoutContainer>
-            <div className='checkout-header'>
-                <div className='header-block'>
+            <CheckoutHeader>
+                <HeaderBlock>
                     <span>Product</span>
-                </div>
-                <div className='header-block'>
+                </HeaderBlock>
+                <HeaderBlock>
                     <span>Description</span>
-                </div> 
-                <div className='header-block'>
+                </HeaderBlock>
+                <HeaderBlock>
                     <span>Quantity</span>
-                </div>
-                <div className='header-block'>
+                </HeaderBlock>
+                <HeaderBlock>
                     <span>Price</span>
-                </div>
-                <div className='header-block'>
+                </HeaderBlock>
+                <HeaderBlock>
                     <span>Remove</span>
-                </div>
-            </div>
-            {cartItems.map((cartItem) => 
-                        <CheckoutItem key={cartItem.id} cartItem={cartItem} />
-                )
-            }
-            <span className='total'>Total: ${cartTotal}</span>
+                </HeaderBlock>
+            </CheckoutHeader>
+            {cartItems.map((cartItem) => (
+                <CheckoutItem key={cartItem.id} cartItem={cartItem} />
+            ))}
+            <Total>Total: ${cartTotal}</Total>
         </CheckoutContainer>
     );
-}
+};
 
 export default Checkout;
