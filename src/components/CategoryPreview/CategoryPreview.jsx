@@ -4,8 +4,6 @@ import ProductCard from '../ProductCard/ProductCard';
 
 import { CategoryContainer } from './category.styles';
 
-
-
 const CategoryPreview = ({ title, products }) => {
     return (
         <CategoryContainer>
