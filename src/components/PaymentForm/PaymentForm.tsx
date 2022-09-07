@@ -14,7 +14,9 @@ import {
   FormContainer,
 } from "./paymentForm.styles";
 
-const ifValidCardElement = (card: StripeCardElement | null): card is StripeCardElement => card !== null;
+const ifValidCardElement = (
+  card: StripeCardElement | null
+): card is StripeCardElement => card !== null;
 
 const PaymentForm = () => {
   const stripe = useStripe();
@@ -43,7 +45,7 @@ const PaymentForm = () => {
 
     const cardDetails = elements.getElement(CardElement);
 
-    if(!ifValidCardElement(cardDetails)) return;
+    if (!ifValidCardElement(cardDetails)) return;
 
     const paymentResult = await stripe.confirmCardPayment(clientSecret, {
       payment_method: {
