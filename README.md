@@ -3,7 +3,7 @@
 <a name="description"></a>
 
 ## Description
-The purpose of this application is to provide a simple e-commerce store with products, cart functionality, authentication, state management, and stripe payment processing. It was built using React, Typescript, Redux, Redux-Saga, SASS, Styled Components, Firebase, and Stripe. This project was built during my time taking the Zero to Mastery React course on Udemy, and is not an original design of my own. 
+The purpose of this application is to provide a simple e-commerce store with products, cart functionality, authentication, state management, and stripe payment processing. It was built using React, Typescript, Redux, Redux-Saga, SASS, Styled Components, Firebase, and Stripe. This project was built during my time taking the Zero to Mastery React course 'Complete React Developer in 2023 (w/ Redux, Hooks, GraphQL)' on Udemy, and is not an original design of my own. 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
