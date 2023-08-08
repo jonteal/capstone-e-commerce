@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# Capstone Commerce
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a name="description"></a>
 
-## Available Scripts
+## Description
+The purpose of this application is to provide a simple e-commerce store with products, cart functionality, authentication, state management, and stripe payment processing. It was built using React, Typescript, Redux, Redux-Saga, SASS, Styled Components, Firebase, and Stripe. This project was built during my time taking the Zero to Mastery React course on Udemy, and is not an original design of my own. 
 
-In the project directory, you can run:
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-### `npm start`
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+- [Video](#video)
+- [Screenshots](#screenshots)
+- [Links](#links)
+- [Resources / Credits](#credits)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<a name="installation"></a>
 
-### `npm test`
+## Installation
+* Clone the repository using:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+git clone https://github.com/jonteal/capstone-e-commerce
+```
+* Be sure that you are in the root directory
+* Install the dependencies by opening the terminal and running the following node command. If you use something other than node, run the relevant substitute command to install dependencies
+```
+npm install
+```
+* Run the command
+```
+npm run start
+```
 
-### `npm run build`
+<a name="usage"></a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
+* In order to use the application, you can click on any of the product categories, add products to the cart, open the cart and adjust quantities as you see fit, and then finally use the Stripe payment processing tool. (Checkout does not work as measure of safety and is stricly for demonstration purposes.)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<a name="license"></a>
 
-### `npm run eject`
+## License
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<a name="contributing"></a>
 
-## Learn More
+## How to Contribute
+1. [Fork the repo!](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+2. Create a feature branch:
+```
+git checkout -b yourname-branch
+```
+3. Commit changes:
+```
+git commit -m 'Your changes here'
+```
+4. Push to the branch:
+```
+git push origin yourname-branch
+```
+5. Submit a pull request and wait for it to be approved or denied.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<a name="tests"></a>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Tests
+No tests available at this time.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<a name="questions"></a>
 
-### Analyzing the Bundle Size
+## Questions
+If you have any questions or comments, please feel free to contact me by email at jonjackson.webdesign@gmail.com!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+<a name="video"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Video
+https://github.com/jonteal/capstone-e-commerce/assets/87287862/c44f36ff-e02b-445d-9ed7-0b073498667e
 
-### Advanced Configuration
+<a name="screenshots"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Screenshots
+<img width="1377" alt="Screenshot 2023-08-07 at 8 37 50 PM" src="https://github.com/jonteal/capstone-e-commerce/assets/87287862/d54bbb2c-10f4-431c-9218-ea85b86d7594">
 
-### Deployment
+<img width="1392" alt="Screenshot 2023-08-07 at 8 38 01 PM" src="https://github.com/jonteal/capstone-e-commerce/assets/87287862/b7b207b5-e883-48d0-8fc1-ee99a9a89674">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<img width="1292" alt="Screenshot 2023-08-07 at 8 38 18 PM" src="https://github.com/jonteal/capstone-e-commerce/assets/87287862/73ec0447-06bd-4326-bb7a-ff941a71e3b7">
 
-### `npm run build` fails to minify
+<a name="links"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Links
+Github Repository: https://github.com/jonteal/capstone-e-commerce
+
+
+<a name="credits"></a>
+
+## Resources / Credits
+This project was architected, designed, and developed by Zero to Mastery from the Udemy course 'Complete React Developer in 2023 (w/ Redux, Hooks, GraphQL)'
+
+URL: https://www.udemy.com/course/complete-react-developer-zero-to-mastery/
+
+## Future Development
+* Create a more complete experience around the store
