@@ -43,6 +43,7 @@ const Checkout = () => {
       ))}
       <Total>Total: ${cartTotal}</Total>
 {/*       <PaymentForm /> */}
+      <h3>Payment Form Removed (DEMO PURPOSES ONLY)</h3>
     </CheckoutContainer>
   );
 };
